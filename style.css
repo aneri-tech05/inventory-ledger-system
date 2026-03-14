@@ -1,0 +1,109 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+background:#0f0f0f;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+/* Container */
+
+.container{
+z-index:2;
+}
+
+/* Card */
+
+.card{
+background:rgba(20,20,20,0.9);
+padding:40px;
+border-radius:15px;
+width:320px;
+box-shadow:0 0 25px rgba(255,0,100,0.2);
+text-align:center;
+}
+
+.card h2{
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+background:#1f1f1f;
+color:white;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:15px;
+border:none;
+border-radius:8px;
+background:#ff4b6e;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff2e55;
+}
+
+.link{
+margin-top:15px;
+font-size:14px;
+}
+
+.link a{
+color:#ff4b6e;
+text-decoration:none;
+}
+
+/* Animated Background */
+
+.bg-animation{
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+overflow:hidden;
+z-index:0;
+}
+
+.bg-animation span{
+position:absolute;
+display:block;
+width:20px;
+height:20px;
+background:rgba(255,75,110,0.4);
+animation:move 25s linear infinite;
+bottom:-150px;
+border-radius:50%;
+}
+
+@keyframes move{
+
+0%{
+transform:translateY(0) scale(0);
+}
+
+100%{
+transform:translateY(-1000px) scale(1.5);
+}
+
+}

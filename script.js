@@ -1,26 +1,18 @@
-/**
- * script.js
- * Applies interactive React-Bits style animations (Spotlight effect) to glass cards.
- */
+const animation = document.querySelector(".bg-animation");
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Select all elements that should have the spotlight hover effect
-    const premiumCards = document.querySelectorAll(".premium-hover");
+for(let i=0;i<50;i++){
 
-    const handleMouseMove = e => {
-        const { currentTarget: target } = e;
+let span = document.createElement("span");
 
-        // Calculate the mouse position relative to the element
-        const rect = target.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+let size = Math.random()*20;
 
-        // Set the CSS variables which control the radial gradient mask in CSS
-        target.style.setProperty("--mouse-x", `${x}px`);
-        target.style.setProperty("--mouse-y", `${y}px`);
-    };
+span.style.width = 10 + size + "px";
+span.style.height = 10 + size + "px";
 
-    for (const card of premiumCards) {
-        card.addEventListener("mousemove", handleMouseMove);
-    }
-});
+span.style.left = Math.random()*window.innerWidth + "px";
+
+span.style.animationDuration = 10 + Math.random()*20 + "s";
+
+animation.appendChild(span);
+
+}
