@@ -1,0 +1,144 @@
+body {
+
+    margin: 0;
+    font-family: Segoe UI, sans-serif;
+
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+}
+
+/* Page container */
+
+.page-container {
+
+    width: 450px;
+
+}
+
+/* Header */
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+}
+
+header h1 {
+
+    font-size: 28px;
+    letter-spacing: 1px;
+
+}
+
+/* Back button */
+
+.back-btn {
+
+    text-decoration: none;
+    color: #00e5ff;
+    font-size: 14px;
+
+}
+
+/* Card */
+
+.form-card {
+
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(12px);
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+}
+
+/* Inputs */
+
+.input-group {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+
+}
+
+label {
+
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #ddd;
+
+}
+
+input,
+textarea {
+
+    padding: 12px;
+
+    border-radius: 8px;
+    border: none;
+
+    background: #1c1c1c;
+
+    color: white;
+
+    font-size: 14px;
+
+    outline: none;
+
+}
+
+textarea {
+
+    height: 80px;
+    resize: none;
+
+}
+
+/* Button */
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #00e5ff;
+
+    color: black;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    background: #00c2d4;
+
+    transform: scale(1.03);
+
+}

@@ -27,7 +27,15 @@
                 <a href="#">Operations</a>
                 <a href="#">Stock</a>
                 <a href="#">Move History</a>
-                <a href="#">Settings</a>
+
+                <div class="settings-menu">
+                    <a href="#" class="settings-btn">Settings ▾</a>
+
+                    <div class="settings-dropdown">
+                        <a href="warehouse.html">Warehouse</a>
+                        <a href="location.html">Location</a>
+                    </div>
+                </div>
             </div>
             <div class="nav-brand">
                 <span class="brand-text">Dashboard</span>
@@ -36,43 +44,139 @@
         </header>
 
         <!-- Main Dashboard Content -->
+        <!-- KPI STATS -->
+        <section class="stats-row animate-in" style="--stagger:1;">
+
+            <div class="stat-card">
+                <h3>245</h3>
+                <p>Total Products</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>3</h3>
+                <p>Warehouses</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>8</h3>
+                <p>Pending Deliveries</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>$12,430</h3>
+                <p>Inventory Value</p>
+            </div>
+
+        </section>
+
+
+        <!-- MAIN CARDS -->
         <main class="dashboard-grid">
+
             <!-- Receipt Card -->
-            <div class="glass-card premium-hover animate-in" style="--stagger: 1;">
+            <div class="glass-card premium-hover animate-in" style="--stagger:2;">
                 <div class="card-border"></div>
+
                 <div class="card-content">
+
                     <h2 class="card-title">Receipt</h2>
+
                     <div class="card-body">
+
                         <button class="primary-btn pulse-hover">
                             <span class="btn-text">4 to receive</span>
                             <div class="btn-glow"></div>
                         </button>
+
                         <div class="stats-list">
                             <div class="stat-item alert"><span class="bullet"></span> 1 Late</div>
                             <div class="stat-item"><span class="bullet"></span> 6 operations</div>
                         </div>
+
                     </div>
                 </div>
             </div>
 
+
             <!-- Delivery Card -->
-            <div class="glass-card premium-hover animate-in" style="--stagger: 2;">
+            <div class="glass-card premium-hover animate-in" style="--stagger:3;">
                 <div class="card-border"></div>
+
                 <div class="card-content">
+
                     <h2 class="card-title">Delivery</h2>
+
                     <div class="card-body">
+
                         <button class="primary-btn pulse-hover">
                             <span class="btn-text">4 to Deliver</span>
                             <div class="btn-glow"></div>
                         </button>
+
                         <div class="stats-list">
                             <div class="stat-item alert"><span class="bullet"></span> 1 Late</div>
                             <div class="stat-item warning"><span class="bullet"></span> 2 waiting</div>
                             <div class="stat-item"><span class="bullet"></span> 6 operations</div>
                         </div>
+
                     </div>
                 </div>
             </div>
+
+        </main>
+
+
+        <!-- ACTIVITY PANEL -->
+        <section class="activity-card animate-in" style="--stagger:4;">
+
+            <h2>Recent Activity</h2>
+
+            <ul>
+
+                <li>📦 Product added to Warehouse A</li>
+                <li>🚚 Delivery completed</li>
+                <li>🔄 Stock moved to Location B</li>
+                <li>⚠ Low stock alert</li>
+
+            </ul>
+
+        </section>
+        <!-- Receipt Card -->
+        <div class="glass-card premium-hover animate-in" style="--stagger: 1;">
+            <div class="card-border"></div>
+            <div class="card-content">
+                <h2 class="card-title">Receipt</h2>
+                <div class="card-body">
+                    <button class="primary-btn pulse-hover">
+                        <span class="btn-text">4 to receive</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <div class="stats-list">
+                        <div class="stat-item alert"><span class="bullet"></span> 1 Late</div>
+                        <div class="stat-item"><span class="bullet"></span> 6 operations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delivery Card -->
+        <div class="glass-card premium-hover animate-in" style="--stagger: 2;">
+            <div class="card-border"></div>
+            <div class="card-content">
+                <h2 class="card-title">Delivery</h2>
+                <div class="card-body">
+                    <button class="primary-btn pulse-hover">
+                        <span class="btn-text">4 to Deliver</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <div class="stats-list">
+                        <div class="stat-item alert"><span class="bullet"></span> 1 Late</div>
+                        <div class="stat-item warning"><span class="bullet"></span> 2 waiting</div>
+                        <div class="stat-item"><span class="bullet"></span> 6 operations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </main>
     </div>
 
