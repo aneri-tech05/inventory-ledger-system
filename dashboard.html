@@ -1,32 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>CoreInventory Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Inventory Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
 </head>
 
 <body>
-
-    <h1>Inventory Dashboard</h1>
-
-    <div class="card">
-        <h2>Receipts</h2>
-        <p>4 to receive</p>
+    <!-- Fluid Splash Cursor Background Overlay -->
+    <div class="fluid-container">
+        <canvas id="fluid"></canvas>
     </div>
 
-    <div class="card">
-        <h2>Deliveries</h2>
-        <p>4 to deliver</p>
+    <!-- Background Effects -->
+    <div class="bg-glow blob-1"></div>
+    <div class="bg-glow blob-2"></div>
+    <div class="noise-overlay"></div>
+
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <header class="top-nav animate-in" style="--stagger: 0;">
+            <div class="nav-links">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Operations</a>
+                <a href="#">Stock</a>
+                <a href="#">Move History</a>
+                <a href="#">Settings</a>
+            </div>
+            <div class="nav-brand">
+                <span class="brand-text">Dashboard</span>
+                <div class="brand-avatar">A</div>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-grid">
+            <!-- Receipt Card -->
+            <div class="glass-card premium-hover animate-in" style="--stagger: 1;">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <h2 class="card-title">Receipt</h2>
+                    <div class="card-body">
+                        <button class="primary-btn pulse-hover">
+                            <span class="btn-text">4 to receive</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <div class="stats-list">
+                            <div class="stat-item alert"><span class="bullet"></span> 1 Late</div>
+                            <div class="stat-item"><span class="bullet"></span> 6 operations</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delivery Card -->
+            <div class="glass-card premium-hover animate-in" style="--stagger: 2;">
+                <div class="card-border"></div>
+                <div class="card-content">
+                    <h2 class="card-title">Delivery</h2>
+                    <div class="card-body">
+                        <button class="primary-btn pulse-hover">
+                            <span class="btn-text">4 to Deliver</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <div class="stats-list">
+                            <div class="stat-item alert"><span class="bullet"></span> 1 Late</div>
+                            <div class="stat-item warning"><span class="bullet"></span> 2 waiting</div>
+                            <div class="stat-item"><span class="bullet"></span> 6 operations</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 
-    <div class="card">
-        <h2>Total Products</h2>
-        <p id="totalProducts">0</p>
-    </div>
-
+    <!-- Scripts -->
     <script src="script.js"></script>
-
+    <script src="splashCursor.js"></script>
 </body>
 
-</html>\
+</html>
