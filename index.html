@@ -1,43 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Login</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="bg-animation"></div>
-
-<div class="container">
-
-<div class="card">
-
-<h2>Login</h2>
-
-<input type="text" id="loginId" placeholder="Login ID">
-
-<input type="password" id="password" placeholder="Password">
-
-<select id="role">
-<option value="">Select Role</option>
-<option value="manager">Manager</option>
-<option value="worker">Warehouse Worker</option>
-</select>
-
-<button onclick="login()">Sign In</button>
-
-<p class="link">
-<a href="#">Forgot Password?</a> |
-<a href="signup.html">Sign Up</a>
-</p>
-
-</div>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreInventory</title>
+    <!-- Three.js and Vanta.js for WebGL Backgrounds -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
